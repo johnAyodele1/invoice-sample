@@ -1,67 +1,81 @@
+/* General Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f2f3f4;
+  color: #000a1e;
+  margin: 0;
+  padding: 0;
+}
+
 .InvoiceContainer {
-    max-width: 1600px;
+  max-width: 1600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.xui-composition-detailheader {
-    grid-template:
-        "header"
-        "detail" / minmax(0, 1fr);
+
+/* Header */
+.xui-gridarea-header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
 }
-@media screen and (min-width: 1200px) {
-    .xui-composition-is-finite {
-        margin-left: auto;
-        margin-right: auto;
-    }
+
+/* Invoice Details */
+.InvoiceDetails {
+  padding: 20px 0;
 }
-.xui-composition-is-finite {
-    max-width: 1200px;
-    width: 100%;
+
+.InvoiceDetails-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
 }
-@media screen and (min-width: 600px) {
-    .xui-composition-has-auto-space-around {
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+
+.xui-textinput-cell {
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
-.xui-composition {
-    display: grid
-;
+
+/* Line Items Grid */
+.LineItemGrid-wrapper {
+  margin-top: 20px;
 }
-*, :after, :before {
-    box-sizing: inherit;
+
+.xui-editabletable {
+  width: 100%;
+  border-collapse: collapse;
 }
-* {
-    min-width: 0;
+
+.xui-editabletableth,
+.xui-editabletabletd {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
 }
-.xui-body, .xui-container {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    box-sizing: border-box;
-    color: #000a1e;
-    font-family: Helvetica Neue, Arial, sans-serif;
-    font-size: var(--x-font-size-medium, .9375rem);
-    line-height: var(--x-line-height-standard, 1.5rem);
+
+.xui-editabletableth {
+  background-color: #f9f9f9;
+  font-weight: bold;
 }
-.xui-body {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    font-size: var(--x-font-size-medium, .9375rem);
-    line-height: var(--x-line-height-standard, 1.5rem);
-    box-sizing: border-box;
-    color: #000a1e;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    background-color: #f2f3f4;
-    -webkit-margin-bottom-collapse: separate;
-    min-height: 100%;
-    overflow-y: scroll;
+
+/* Footer */
+.InvoiceFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
 }
-html {
-    font-size: 100%;
-    -webkit-text-size-adjust: 100%;
+
+.InvoiceFooter-amountSummary {
+  width: 300px;
 }
-.hydrated {
-    visibility: inherit;
+
+.ac-amount-summary-field {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
 }
