@@ -1,0 +1,13 @@
+.trialBanner {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.trialLink {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #34d399;
+}

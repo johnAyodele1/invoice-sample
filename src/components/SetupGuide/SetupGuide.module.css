@@ -1,0 +1,20 @@
+.setupGuide {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.button {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.button:hover {
+    background-color: #1d4ed8;
+}

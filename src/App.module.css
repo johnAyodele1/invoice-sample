@@ -1,0 +1,11 @@
+.app {
+    background-color: #f3f4f6;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem 1rem;
+}

@@ -1,0 +1,29 @@
+.summaryContainer {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.summary {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .summary {
+        width: 33.333333%;
+    }
+}
+
+.summaryRow {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #4b5563;
+}
+
+.total {
+    border-top: 2px solid black;
+    font-weight: bold;
+    font-size: 1.125rem;
+}

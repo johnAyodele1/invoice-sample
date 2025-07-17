@@ -1,0 +1,60 @@
+.pageTitleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.breadcrumbs {
+    color: #6b7280;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.draftBadge {
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: #6b7280;
+    background-color: #e5e7eb;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+}
+
+.button:hover {
+    background-color: #f3f4f6;
+}
+
+.approveButton {
+    background-color: #2563eb;
+    color: white;
+}
+
+.approveButton:hover {
+    background-color: #1d4ed8;
+}
+
+.iconButton {
+    color: #6b7280;
+}
+
+.iconButton:hover {
+    color: #2563eb;
+}
