@@ -1,0 +1,77 @@
+.header {
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.75rem 1rem;
+}
+
+.flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexStart {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.nav {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .nav {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: #4b5563;
+    }
+
+    .nav a:hover {
+        color: #2563eb;
+    }
+}
+
+.flexEnd {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.iconButton {
+    color: #6b7280;
+}
+
+.iconButton:hover {
+    color: #2563eb;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: #7c3aed;
+    color: white;
+    border-radius: 9999px;
+    font-weight: bold;
+}

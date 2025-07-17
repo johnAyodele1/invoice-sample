@@ -1,0 +1,78 @@
+.tableContainer {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.headerRow {
+    background-color: #f9fafb;
+}
+
+.th {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4b5563;
+}
+
+.bodyRow {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.td {
+    padding: 0.5rem;
+}
+
+.input {
+    width: 100%;
+    border: none;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.textRight {
+    text-align: right;
+}
+
+.deleteButton {
+    color: #6b7280;
+}
+
+.deleteButton:hover {
+    color: #ef4444;
+}
+
+.actions {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    border: 1px solid #d1d5db;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+}
+
+.button:hover {
+    background-color: #f3f4f6;
+}
+
+.addRowButton {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.addRowButton:hover {
+    background-color: #eff6ff;
+}

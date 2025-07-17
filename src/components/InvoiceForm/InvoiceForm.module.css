@@ -1,0 +1,84 @@
+.formContainer {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+}
+
+.label {
+    font-size: 0.875rem;
+    color: #4b5563;
+}
+
+.inputWrapper {
+    position: relative;
+    margin-top: 0.25rem;
+}
+
+.icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+}
+
+.input {
+    width: 100%;
+    padding-left: 2.5rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+}
+
+.input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #2563eb;
+}
+
+.select {
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+}
+
+.select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #2563eb;
+}
+
+.onlinePayments {
+    grid-column: span 3;
+}
+
+.paymentLogos {
+    margin-top: 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.setupLink {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.logo {
+    height: 1.25rem;
+}
